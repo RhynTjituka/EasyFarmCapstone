@@ -1,0 +1,109 @@
+/* ---------- Colours (change them here and everything follows) ---------- */
+:root {
+    --green: #2f6b3a;
+    --green-dark: #1f4a29;
+    --brown: #6b4423;
+    --hay: #e3b04b;
+    --red: #c0392b;
+    --cream: #f7f1e3;
+    --text: #2b2b2b;
+}
+
+/* ---------- Basics (this is the PHONE layout) ---------- */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--cream);
+}
+
+/* ---------- Header and navigation ---------- */
+header {
+    background: var(--green);
+    color: white;
+    padding: 24px 16px;
+    text-align: center;
+    border-bottom: 6px solid var(--hay);
+}
+
+header h1 {
+    margin: 0 0 8px;
+    font-size: 2rem;
+}
+
+header p {
+    margin: 0 0 8px;
+}
+
+.byline {
+    font-size: 0.9rem;
+    opacity: 0.85;
+}
+
+nav {
+    margin-top: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 14px;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+
+nav a:hover,
+nav a:focus {
+    background: var(--hay);
+    border-color: var(--hay);
+    color: var(--text);
+}
+
+/* ---------- Sections ---------- */
+main {
+    padding: 0 16px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+section {
+    background: white;
+    margin: 16px 0;
+    padding: 20px 16px;
+    border-radius: 8px;
+    border-left: 6px solid var(--green);
+}
+
+section h2 {
+    margin-top: 0;
+    color: var(--green-dark);
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+a {
+    color: var(--green-dark);
+}
+
+a:hover {
+    color: var(--brown);
+}
+
+.note {
+    background: #fdecea;
+    border-left: 4px solid var(--red);
