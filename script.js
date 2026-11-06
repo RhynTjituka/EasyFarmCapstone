@@ -44,7 +44,7 @@ if (form) {
         // A static site has no server, so we open the visitor's email app with the message filled in.
         var subject = encodeURIComponent("EasyFarm message from " + name);
         var body = encodeURIComponent(message + "\n\nFrom: " + name + " (" + email + ")");
-        window.location.href = "mailto:YOUR-EMAIL@example.com?subject=" + subject + "&body=" + body;
+        window.location.href = "mailto:rtjituka5907940@mysundance.ca?subject=" + subject + "&body=" + body;
 
         document.getElementById("formStatus").textContent = "Thank you! Your email app should open with the message ready to send.";
         form.reset();
