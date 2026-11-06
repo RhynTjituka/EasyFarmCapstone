@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | EasyFarm</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>EasyFarm</h1>
+        <p>Questions, feedback or want to follow the project? Send me a message.</p>
+        <nav>
+            <a href="index.html#why">Why</a>
+            <a href="index.html#features">Features</a>
+            <a href="index.html#tech">Tech</a>
+            <a href="index.html#progress">Progress</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="contact">
+            <h2>Contact</h2>
+
+            <form id="contactForm" novalidate>
+                <label for="name">Your name</label>
+                <input type="text" id="name" name="name" autocomplete="name">
+                <p class="error" id="nameError"></p>
+
+                <label for="email">Your email</label>
+                <input type="email" id="email" name="email" autocomplete="email">
+                <p class="error" id="emailError"></p>
+
+                <label for="message">Your message</label>
+                <textarea id="message" name="message" rows="5"></textarea>
+                <p class="error" id="messageError"></p>
+
+                <button type="submit">Send message</button>
+                <p class="success" id="formStatus"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 EasyFarm Capstone project</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
