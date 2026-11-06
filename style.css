@@ -107,3 +107,87 @@ a:hover {
 .note {
     background: #fdecea;
     border-left: 4px solid var(--red);
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+/* ---------- Contact form ---------- */
+form label {
+    display: block;
+    margin-top: 16px;
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 4px;
+    font-size: 1rem;
+    font-family: inherit;
+    border: 1px solid #999;
+    border-radius: 6px;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: 3px solid var(--green);
+    border-color: var(--green);
+}
+
+form button {
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-size: 1rem;
+    background: var(--green);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: var(--brown);
+}
+
+.error {
+    color: var(--red);
+    margin: 4px 0 0;
+    min-height: 1.2em;
+    font-size: 0.9rem;
+}
+
+.success {
+    color: var(--green-dark);
+    font-weight: bold;
+}
+
+/* ---------- Footer ---------- */
+footer {
+    text-align: center;
+    padding: 20px 16px;
+    background: var(--brown);
+    color: white;
+    font-size: 0.9rem;
+}
+
+/* ---------- Wider screens (tablet and desktop) ---------- */
+@media (min-width: 641px) {
+    header {
+        padding: 48px 24px;
+    }
+
+    header h1 {
+        font-size: 3rem;
+    }
+
+    header p {
+        max-width: 640px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    section {
+        padding: 28px 32px;
+    }
+}
