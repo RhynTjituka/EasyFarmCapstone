@@ -12,84 +12,76 @@
 
     <header>
         <h1>EasyFarm</h1>
-        <p>An Android app that keeps a photo and ear tag for every animal, so a missing animal can be found and
-            described fast.</p>
-        <p class="byline">Built by Rhyn Tjituka | Capstone project</p>
+        <p>Know every animal. Find the ones that go missing.</p>
+        <p class="byline">An Android app by Rhyn Tjituka | Capstone project</p>
         <nav>
-            <a href="#about">About</a>
             <a href="#why">Why</a>
-            <a href="#features">Features</a>
-            <a href="#tech">Tech</a>
-            <a href="#progress">Progress</a>
-            <a href="#work">Work</a>
+            <a href="#how">How it works</a>
+            <a href="#photo">Photo check</a>
+            <a href="#build">Build log</a>
+            <a href="#about">About</a>
             <a href="contact.html">Contact</a>
         </nav>
     </header>
 
     <main>
 
-        <section id="about">
-            <h2>About me</h2>
-            <p>I'm Rhyn Tjituka, a Mobile and Web Design student at Sundance College in Alberta. I'm also the founder of
-                Omundu Magazine, a cultural publication rooted in Ovaherero heritage.</p>
-            <p>EasyFarm brings together what I'm learning in my program and a problem I know from home.</p>
-            <h3>Coursework</h3>
-            <ul>
-                <li>Digital media product design and development</li>
-                <li>Mobile app development with Kotlin and Android Studio</li>
-                <li>Responsive web design with HTML, CSS and JavaScript (this website)</li>
-            </ul>
-        </section>
-
         <section id="why">
-            <h2>Why EasyFarm</h2>
+            <h2>Why I'm building this</h2>
             <p>Farmers lose livestock, and when an animal goes missing it is hard to describe it well enough for anyone
                 to recognise it. My family back home faces this, and it is why I am building EasyFarm.</p>
-            <p>The idea: every animal gets one clear photo and one ear tag in the app. When one goes missing, the app
-                already has what is needed to make a poster.</p>
+            <p>The idea is simple: if every animal already has one clear photo and one ear tag in the app, a missing
+                animal is never just a description. It is a picture.</p>
         </section>
 
-        <section id="features">
-            <h2>What EasyFarm does</h2>
+        <section id="how">
+            <h2>How it works</h2>
+            <ol>
+                <li><strong>Capture.</strong> Photograph each animal once and record its ear tag. The app builds the
+                    herd database.</li>
+                <li><strong>Roll call.</strong> Scan the animals you see. The app compares them with the herd list and
+                    shows who is missing.</li>
+                <li><strong>Poster.</strong> For a missing animal, the app builds a MISSING poster around its photo,
+                    adds the farmer's details, and shares it to WhatsApp.</li>
+            </ol>
+        </section>
+
+        <section id="photo">
+            <h2>The photo check</h2>
+            <p>A poster is only useful if the photo is. Like apps that verify an ID, EasyFarm will not accept a photo
+                that is too dark, too bright, blurred, flat, or with the animal cut off. It tells the farmer what to fix
+                and lets them retake it.</p>
+            <p class="note">Status: the rules are written and tested. The camera screen that uses them is still to come.
+            </p>
+        </section>
+
+        <section id="build">
+            <h2>Build log</h2>
+            <h3>Done so far</h3>
             <ul>
-                <li><strong>Scan:</strong> the app opens on the camera, ready to read an ear tag or capture an animal.
-                </li>
-                <li><strong>Herd:</strong> a database of every animal, with its photo, ear tag, species and status.</li>
-                <li><strong>Roll call:</strong> compare the animals you see with the herd list to find who is missing.
-                </li>
-                <li><strong>Missing poster:</strong> a MISSING notice built around the animal's photo plus the farmer's
-                    details, shared to WhatsApp.</li>
-                <li><strong>Photo check:</strong> the app refuses photos that are too dark, blurred, flat or cut off, so
-                    every picture is usable.</li>
-                <li><strong>Care reminders:</strong> due dates for vaccinations and feeding.</li>
+                <li>Android project set up with Kotlin and Jetpack Compose</li>
+                <li>Rules written as plain Kotlin and checked with unit tests: ear tag cleaning, status changes, roll
+                    call, care dates and herd overview</li>
+                <li>This website, published on GitHub Pages</li>
             </ul>
-            <p class="note">Status: in development. Screenshots will be added as each screen is built.</p>
-        </section>
-
-        <section id="tech">
-            <h2>The technology behind the app</h2>
-            <p>EasyFarm is an Android app built with Kotlin and Jetpack Compose. It stores the herd on the phone in a
-                Room database.</p>
-        </section>
-
-        <section id="progress">
-            <h2>Progress</h2>
-            <p>Done so far: project setup, tag and status rules, roll call, care dates, herd overview, and the first
-                unit tests.</p>
-            <p>Next: the database, the screens, and the missing-animal poster.</p>
-        </section>
-
-        <section id="work">
-            <h2>Work</h2>
+            <h3>Next</h3>
             <ul>
-                <li><strong>EasyFarm:</strong> the Android app on this page, my capstone project. Website source code:
-                    <a href="https://github.com/RhynTjituka/EasyFarmCapstone">EasyFarmCapstone repository on GitHub</a>.
-                    The Android app source is available on request.</li>
-                <li><strong>Omundu Magazine:</strong> a cultural publication I founded. <a
-                        href="https://omundumagazine.com">Visit omundumagazine.com</a>.</li>
-                <li><strong>Course projects:</strong> a mobile-first bus route web app and other exercises in Kotlin,
-                    HTML, CSS and JavaScript.</li>
+                <li>Room database for the herd</li>
+                <li>The screens and navigation</li>
+                <li>Camera capture and the photo check</li>
+                <li>The missing-animal poster</li>
             </ul>
+            <p>Website source code: <a href="https://github.com/RhynTjituka/EasyFarmCapstone">EasyFarmCapstone on
+                    GitHub</a>. The Android app source is available on request.</p>
+        </section>
+
+        <section id="about">
+            <h2>About me</h2>
+            <p>I'm Rhyn Tjituka, a Mobile and Web Development student at Sundance College in Alberta. I'm also the
+                founder of <a href="https://omundumagazine.com">Omundu Magazine</a>, a cultural publication rooted in
+                Ovaherero heritage.</p>
+            <p>EasyFarm is my capstone project. It brings together what I'm learning in my program and a problem I know
+                from home.</p>
         </section>
 
     </main>

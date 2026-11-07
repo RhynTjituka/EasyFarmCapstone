@@ -90,10 +90,12 @@ section h2 {
 
 section h3 {
     color: var(--brown);
+    margin-bottom: 4px;
 }
 
-ul {
-    padding-left: 20px;
+ul,
+ol {
+    padding-left: 22px;
 }
 
 li {

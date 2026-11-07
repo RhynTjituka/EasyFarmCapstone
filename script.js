@@ -1,4 +1,4 @@
-// This only controls the contact form
+// Runs only on pages that have the contact form
 var form = document.getElementById("contactForm");
 
 if (form) {
@@ -19,7 +19,7 @@ if (form) {
             showError("nameError", "");
         }
 
-        // Email: must look like a conventional email address
+        // Email: must look like something@something.something
         var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailPattern.test(email)) {
             showError("emailError", "Please enter a valid email address.");
